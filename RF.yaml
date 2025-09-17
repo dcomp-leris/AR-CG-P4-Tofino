@@ -1,0 +1,173 @@
+
+
+Tree1:
+  PS:
+     r1: 
+      min: 0
+      max: 65535
+      class: -1
+  IPG: 
+    r1:
+      min: 0
+      max: 1403
+      class: 1
+    r2:
+      min: 1404
+      max: 1048575
+      class: 2
+  FS:
+    r1:
+      min: 0
+      max: 42
+      class: 3
+    r2:
+      min: 43
+      max: 1667
+      class: 2
+    r3: 
+      min: 1668
+      max: 65535
+      class: 0     
+  IFG:
+    r1: 
+      min: 0
+      maxx: 1048575
+      class: -1
+
+Tree2:
+  PS:
+     r1: 
+      min: 0
+      max: 65535
+      class: -1    
+  IPG: 
+    r1:
+      min: 0
+      max: 1403
+      class: 1
+    r2:
+      min: 1404
+      max: 1048575
+      class: 2
+  FS:
+    r1:
+      min: 0
+      max: 65535
+      class: -1
+  IFG:
+    r1: 
+      min: 0
+      maxx: 31502
+      class: 3
+    r2: 
+      min: 31503
+      max: 1048575
+      class:0
+
+Tree3:
+  PS:
+     r1: 
+      min: 0
+      max: 65535
+      class: -1      
+  IPG: 
+    r1:
+      min: 0
+      max: 1403
+      class: 1
+    r2:
+      min: 1404
+      max: 1048575
+      class: 2
+  FS:
+    r1:
+      min: 0
+      max: 42
+      class: 3
+    r2:
+      min: 43
+      max: 65535
+      class: 0
+  IFG:
+    r1: 
+      min: 0
+      maxx: 57938
+      class: 2
+    r2: 
+      min: 57939
+      max: 1048575
+      class:0
+
+Tree4:
+  PS:
+     r1: 
+      min: 0
+      max: 65535
+      class: -1      
+  IPG: 
+    r1:
+      min: 0
+      max: 1403
+      class: 1
+    r2:
+      min: 1404
+      max: 1048575
+      class: 2
+    r3:
+      min: 218208
+      max: 1048575
+      class: 3
+  FS:
+    r1:
+      min: 0
+      max: 44
+      class: 3
+    r2:
+      min: 45
+      max: 65535
+      class: 2
+  IFG:
+    r1:
+      min: 0
+      max: 57831
+      class: 6
+    r2:
+      min: 57832
+      max: 1048575
+      class: 5
+
+Tree5:
+  PS:
+     r1: 
+      min: 0
+      max: 65535
+      class: -1    
+  IPG: 
+    r1:
+      min: 0
+      max: 1048575
+      class: 1
+    r2:
+      min: 1383
+      max: 1048575
+      class: 2
+  FS:
+    r1:
+      min: 0
+      max: 42
+      class: 3
+    r2:
+      min: 43
+      max: 65535
+      class: 0
+  IFG:
+    r1:
+      min: 0
+      max: 1048575
+      class: -1
+
+ 
+
+
+
+
