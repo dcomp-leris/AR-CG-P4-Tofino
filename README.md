@@ -1,12 +1,9 @@
-# In-Network AR/CG Traffic Classification Entirely Deployed in the Programmable Data Plane: Unlocking RTP Features and L4S Integration
-
-[![Conference](https://img.shields.io/badge/submitted-Netsoft2025-blue)](https://netsoft2025.ieee-netsoft.org)
-[![Conference](https://img.shields.io/badge/Acceptance-Netsoft2025-yellow)](https://netsoft2025.ieee-netsoft.org)
+# ICEFE: Ingress Classification & Egress Feature Extraction for L4S-Enabled Augmented Reality and Cloud Gaming Prioritization
 
 
 
 ### **Note:**
-This paper has been submitted to the Netsoft 2025 Conference and is under review!
+This paper has been submitted and it is under construction yet!
 
 
 ## (1) Connect Tofino & Clone P4 Code
