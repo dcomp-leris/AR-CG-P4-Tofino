@@ -811,7 +811,7 @@ control Ingress(
     //    T1: FS -> (code 0) IPG / (code 2) PS        T2: IFG -> (code 0) IPG
     //    T3: FS -> (0) IFG -> (0) IPG                T4: IFG -> (5) IPG / (6) FS
     //    T5: FS -> (0) IPG
-    //  Entries come from weights.json (loaded by ICEFE.py). A miss leaves the vote unchanged.
+    //  Entries come from model.json (loaded by ICEFE.py). A miss leaves the vote unchanged.
     // -------------------------------------------------------------------------------------
     action classify_T1(bit<8> classify_result){
         ig_md.classification.metadata_classT1 = classify_result;

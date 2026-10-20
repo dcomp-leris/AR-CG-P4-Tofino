@@ -19,7 +19,7 @@ class-balanced weights. Coordinate descent: each table's cut points (from
 feature quantiles) and per-interval labels are optimised exhaustively with the
 other tables fixed, scoring the whole tree by emulation. Majority: plurality of
 the 5 votes, ties -> lowest class id (as in the original majority.txt).
-Outputs OUTDIR/weights.json, OUTDIR/majority.txt, OUTDIR/report.json.
+Outputs OUTDIR/model.json, OUTDIR/majority.txt, OUTDIR/report.json.
 """
 import argparse
 import csv
@@ -212,7 +212,7 @@ def main():
                                   for i, (lo, hi, c) in enumerate(t.ranges())}
         for f in ('PS', 'IPG', 'FS', 'IFG'):          # unused feature tables, as in the original file
             weights[name].setdefault(f, {'r1': {'min': 0, 'max': MAXV[f], 'class': -1}})
-    (out / 'weights.json').write_text(json.dumps(weights, indent=2) + '\n')
+    (out / 'model.json').write_text(json.dumps(weights, indent=2) + '\n')
     mm = majority_map()
     (out / 'majority.txt').write_text(''.join('t1=%d,t2=%d,t3=%d,t4=%d,t5=%d,m=%d\n' % (k + (v,))
                                               for k, v in sorted(mm.items())))

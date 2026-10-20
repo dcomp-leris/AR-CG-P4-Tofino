@@ -39,7 +39,7 @@ bfrt_python
 run_coupling_aqm(duration_s=60)
 ```
 
-`weights.json` contains the five tree thresholds and `majority.txt` contains their vote map. `coupling_aqm.py` implements the host-side coupled-AQM update loop. Compilation creates `ICEFE/`, `ICEFE.compile.log`, and `ICEFE.switchd.conf`; these generated files are not stored in Git.
+`model.json` contains the five tree thresholds and `majority.txt` contains their vote map. `coupling_aqm.py` implements the host-side coupled-AQM update loop. Compilation creates `ICEFE/`, `ICEFE.compile.log`, and `ICEFE.switchd.conf`; these generated files are not stored in Git.
 
 ## Repository layout
 

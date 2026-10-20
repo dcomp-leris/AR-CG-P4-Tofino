@@ -356,10 +356,10 @@ IPI Check (when FS ≥ 1668):
 import json
 from pathlib import Path
 
-with (Path(__file__).resolve().parent / "weights.json").open() as f:
+with (Path(__file__).resolve().parent / "model.json").open() as f:
     data = json.load(f)
 
-#with open("./weights.json", "r") as f:
+#with open("./model.json", "r") as f:
     #data = json.load(f)
 
 #print(data['Tree1']['IPG']['r1']['min'], data['Tree1']['IPG']['r1']['max'],data['Tree1']['IPG']['r1']['class'])

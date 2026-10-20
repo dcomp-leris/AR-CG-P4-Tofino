@@ -13,7 +13,7 @@ if R2C1_PROGRAM == 'ICEFE_r2c1':
     except Exception:   # empty table: BFRT raises "Object not found"
         _majority = []
     if _majority in (None, -1, []):
-        __file__ = str(_root / 'programs' / 'ICEFE_r2c1.py')   # resolves weights.json/majority.txt
+        __file__ = str(_root / 'programs' / 'ICEFE_r2c1.py')   # resolves model.json/majority.txt
         exec(compile((_root / 'programs' / 'ICEFE_r2c1.py').read_text(), __file__, 'exec'), globals())
     else:
         # Controller already loaded into this switchd (retry after a later failure):
