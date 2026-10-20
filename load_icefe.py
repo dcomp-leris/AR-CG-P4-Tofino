@@ -14,7 +14,7 @@ import ast as _ast
 import sys as _sys
 from pathlib import Path as _Path
 
-_dir = _Path(ICEFE_DIR).resolve()          # folder with ICEFE.py, coupling_aqm.py, model.json ...
+_dir = _Path(ICEFE_DIR).resolve()          # folder with ICEFE.py, coupling_aqm.py, Model.json ...
 _ctrl = _dir / 'ICEFE.py'
 if str(_dir) not in _sys.path:              # coupling_aqm.py must be importable
     _sys.path.insert(0, str(_dir))

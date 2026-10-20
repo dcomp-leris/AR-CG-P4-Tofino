@@ -236,7 +236,7 @@ def configure_server_queues():
         queues = data["egress_qid_queues"]
         if int(data["port_queues_count"]) < 2 or len(queues) < 2 or queues[0] == queues[1]:
             raise ValueError("Port {} needs distinct Q0/Q1 queue carving".format(port))
-        for logical, weight in ((0, 1), (1, 32)):
+        for logical, weight in ((0, 1), (1, 16)):
             bfrt.tf2.tm.queue.sched_cfg.mod(
                 pipe=port >> 7, pg_id=data["pg_id"], pg_queue=queues[logical],
                 dwrr_weight=weight)
@@ -356,10 +356,10 @@ IPI Check (when FS ≥ 1668):
 import json
 from pathlib import Path
 
-with (Path(__file__).resolve().parent / "model.json").open() as f:
+with (Path(__file__).resolve().parent / "Model.json").open() as f:
     data = json.load(f)
 
-#with open("./model.json", "r") as f:
+#with open("./Model.json", "r") as f:
     #data = json.load(f)
 
 #print(data['Tree1']['IPG']['r1']['min'], data['Tree1']['IPG']['r1']['max'],data['Tree1']['IPG']['r1']['class'])

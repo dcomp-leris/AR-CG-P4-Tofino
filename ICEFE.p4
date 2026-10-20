@@ -9,7 +9,7 @@
           1 = AR (augmented reality), 2 = CG (cloud gaming), 3 = Other, 0 = not classified yet.
       AR/CG -> ECN = ECT(1), DSCP 46/34, queue Q1 (L4S).   Other -> ECN = Not-ECT, DSCP 50, queue Q0.
       Packets that already carry ECT(1)/CE (real L4S senders) are left as they are.
-   2. TRAFFIC MANAGER: Q0 (Classic) and Q1 (L4S) share each server port with DWRR 1:32
+   2. TRAFFIC MANAGER: Q0 (Classic) and Q1 (L4S) share each server port with DWRR 1:16
       (configured by the controller ICEFE.py).
    3. EGRESS: coupled DualPI2 AQM. The controller writes p_base per port; here
           L4S  (Q1): CE-mark if TM congestion flag, OR delay >= 1 ms step, OR random < 2*p_base;
@@ -811,7 +811,7 @@ control Ingress(
     //    T1: FS -> (code 0) IPG / (code 2) PS        T2: IFG -> (code 0) IPG
     //    T3: FS -> (0) IFG -> (0) IPG                T4: IFG -> (5) IPG / (6) FS
     //    T5: FS -> (0) IPG
-    //  Entries come from model.json (loaded by ICEFE.py). A miss leaves the vote unchanged.
+    //  Entries come from Model.json (loaded by ICEFE.py). A miss leaves the vote unchanged.
     // -------------------------------------------------------------------------------------
     action classify_T1(bit<8> classify_result){
         ig_md.classification.metadata_classT1 = classify_result;
