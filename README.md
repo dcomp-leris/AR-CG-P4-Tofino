@@ -22,6 +22,18 @@ bash compile.sh
 sudo env SDE="$SDE" bash start_switch.sh
 ```
 
+The default build uses **ECN-Preserving Admission**. To build the optional
+**Operator-Controlled ECT(1) Admission** profile instead, use:
+
+```bash
+ICEFE_ADMISSION_MODE=operator-ect1 bash compile.sh
+```
+
+Both profiles preserve incoming ECT(0), ECT(1), and CE. The optional profile
+changes only operator-authorized Not-ECT AR/CG packets to ECT(1). Authorized
+AR/CG traffic uses Q1 in either profile. Other and Not-Classified traffic keep
+their incoming ECN and DSCP and follow the default ECN-based queue selection.
+
 Keep the switch process open. In a second terminal:
 
 ```bash

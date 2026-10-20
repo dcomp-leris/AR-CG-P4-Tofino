@@ -7,8 +7,9 @@
    1. INGRESS: an original IPv4 packet gets a 16-bit flow ID = CRC16(dst IP, dst port, protocol).
       The per-flow decision (shared_register) tells us the flow's class:
           1 = AR (augmented reality), 2 = CG (cloud gaming), 3 = Other, 0 = not classified yet.
-      AR/CG -> ECN = ECT(1), DSCP 46/34, queue Q1 (L4S).   Other -> ECN = Not-ECT, DSCP 50, queue Q0.
-      Packets that already carry ECT(1)/CE (real L4S senders) are left as they are.
+      Authorized AR/CG -> DSCP 46/34 and queue Q1. ECN-Preserving Admission retains ECN;
+      Operator-Controlled ECT(1) Admission rewrites only authorized Not-ECT packets to ECT(1).
+      ECT(0), ECT(1), and CE are never rewritten by admission. Other/Not-Classified retain ECN/DSCP.
    2. TRAFFIC MANAGER: Q0 (Classic) and Q1 (L4S) share each server port with DWRR 1:16
       (configured by the controller ICEFE.py).
    3. EGRESS: coupled DualPI2 AQM. The controller writes p_base per port; here
@@ -41,6 +42,13 @@
 #include <core.p4>
 // Tofino 2 architecture: intrinsic metadata, Register, Lpf, Hash, Mirror, ...
 #include <t2na.p4>
+
+// Admission profile selected when compiling ICEFE.p4. The safe default is ECN preserving.
+// compile.sh defines this macro as 1 only for Operator-Controlled ECT(1) Admission.
+#ifndef ICEFE_OPERATOR_CONTROLLED_ECT1
+#define ICEFE_OPERATOR_CONTROLLED_ECT1 0
+#endif
+const bit<1> ICEFE_ECT1_REWRITE_ENABLED = ICEFE_OPERATOR_CONTROLLED_ECT1;
 /*** Types of variable ***/
 // Short names for frequently used bit widths.
 typedef bit<4> header_type_t;
@@ -249,6 +257,7 @@ header bridge_h {
     bit<16> bridge_ingress_port; 
     bit<48> ingress_global_tstamp;
     bit<16> bridge_qid;
+    bit<8> trusted_admission;
 }
 
 //*** Count the Hops ***//
@@ -1196,6 +1205,9 @@ control Ingress(
 
     //******************************************* Original pkts (any port except 128) *******************************************//
     else{
+        // Set only from the packet as received. A DSCP assigned later by this node must not
+        // suppress the remaining observations in the current classification window.
+        bit<8> trusted_admission = 0;
         // topology_forwarding_logic: replace old server-to-server assumptions.
         // Keep the existing INT loop on 136 and legacy non-server paths below.
         // ---------------- (B) ORIGINAL packet: forwarding ----------------
@@ -1282,77 +1294,53 @@ control Ingress(
         else if(hdr.udp.isValid()){
             extract_flowID_ipv4_udp();
         }
-        
-        
-        
-        //*** marking_decision --> 0 or 1 or 2 or 3 ***// 
-        // 0--> Non-Classified, 1--> AR | 2--> CG | 3--> Other (Non-[Ar or CG])
-        // Read the class decided for this flow (0 if the flow is not classified yet).
+        // DSCP 46/34 received from the managed domain is an already-authorized admission.
+        // Preserve its ECN/DSCP, place it in Q1, and tell egress not to mirror it again.
+        if (!hdr.nodeCount.isValid() && (hdr.ipv4.dscp == 46 || hdr.ipv4.dscp == 34)) {
+            trusted_admission = 1;
+        }
+
+        // 0 = Not-Classified, 1 = AR, 2 = CG, 3 = Other.
         bit<2> c7_arrival_ecn = hdr.ipv4.ecn;
         bit<8> marking_decision = read_shared_register.execute(ig_md.metadata_flowID);
 
-        //*** Not Mark INT Packet ***/
-        // INT probes are never re-marked.
-        if(hdr.nodeCount.isValid()){
+        // INT probes receive no ICEFE admission action.
+        if (hdr.nodeCount.isValid()) {
             marking_decision = 0;
         }
         c7_decision = marking_decision;
 
-        //*** marking_decision = 1 (AR) ***//
-        //*** Action --> Mark ECT(1) & Set DSCP(46)
-        // Rewrite rules. A DSCP already set to 46/34/50 forces that class; packets that already are
-        // ECT(1) or CE (genuine L4S senders such as TCP Prague) are not touched.
-        // AR -> ECT(1), DSCP 46 (EF), green.
-        if((marking_decision == 1 || hdr.ipv4.dscp == 46) && (hdr.ipv4.ecn != 1 && hdr.ipv4.ecn != 3)){ // AR
-            hdr.ipv4.ecn = 1; //1
+        // Default ECN-based queue selection for traffic without an ICEFE admission decision.
+        // ECT(1) and CE use Q1; Not-ECT and ECT(0) use Q0.
+        if (hdr.ipv4.ecn == 1 || hdr.ipv4.ecn == 3) {
+            ig_tm_md.qid = 1;
+        }
+
+        if (trusted_admission == 1) {
+            // Reuse a trusted upstream admission without changing its ECN or DSCP.
+            ig_tm_md.qid = 1;
+            ig_tm_md.packet_color = 2w0;
+        }
+        // AR: admit to Q1 and assign DSCP 46. Only the optional operator-controlled
+        // profile changes an incoming Not-ECT codepoint to ECT(1).
+        else if (marking_decision == 1) {
+            if (ICEFE_ECT1_REWRITE_ENABLED == 1 && hdr.ipv4.ecn == 0) {
+                hdr.ipv4.ecn = 1;
+            }
             hdr.ipv4.dscp = 46;
-            ig_tm_md.packet_color = 2w0;  // GREEN: highest drop protection    
+            ig_tm_md.qid = 1;
+            ig_tm_md.packet_color = 2w0;
         }
-        //*** marking_decision = 2 (CG) ***//
-        //*** Action --> Mark ECT(1) & Set DSCP(34)
-        // CG -> ECT(1), DSCP 34 (AF41), green.
-        else if((marking_decision == 2 || hdr.ipv4.dscp == 34) && (hdr.ipv4.ecn != 1 && hdr.ipv4.ecn != 3)){ // CG 34 or 6w0x22
-            hdr.ipv4.ecn = 1; //1
+        // CG: the same admission rule, with DSCP 34.
+        else if (marking_decision == 2) {
+            if (ICEFE_ECT1_REWRITE_ENABLED == 1 && hdr.ipv4.ecn == 0) {
+                hdr.ipv4.ecn = 1;
+            }
             hdr.ipv4.dscp = 34;
-            ig_tm_md.packet_color = 2w0;  // GREEN: highest drop protection
+            ig_tm_md.qid = 1;
+            ig_tm_md.packet_color = 2w0;
         }
-
-        //*** marking_decision = 3 (Other) ***//
-        //*** Action --> Not-ECT & Set DSCP(50)
-        // Other -> Not-ECT (ECN 0), DSCP 50, red. (Unclassified flows, decision 0, are left unchanged.)
-        else if((marking_decision == 3 || hdr.ipv4.dscp == 50) && (hdr.ipv4.ecn != 1 && hdr.ipv4.ecn != 3)){ // Other or Non-(AR or CG)
-            hdr.ipv4.ecn = 0; 
-            hdr.ipv4.dscp = 50;
-            // ig_tm_md.packet_color = 2w1;  // YELLOW
-            ig_tm_md.packet_color = 2w3;  // RED: lowest drop protection
-        }
-
-        //else {
-            //hdr.ipv4.ecn = 0;
-            //hdr.ipv4.dscp = 0;
-        //}
-
-        
-
-        /***
-        ##############################################################################################################
-        L4S vs Classic Queue Allocation
-        Queue_ID ==1 ==> L4S
-        Queue_ID ==0 ==> Classic 
-        ##############################################################################################################
-        ***/  
-        // Queue choice from the (rewritten) ECN field: ECT(1) -> Q1 (L4S), everything else -> Q0 (Classic).
-        // Note: CE packets therefore go to Q0.
-        if(hdr.ipv4.ecn == 1){
-        ig_tm_md.qid = 1; // Set L4S Queue 
-                 }
-        // if(hdr.ipv4.ecn == 0){
-        //m_md.qid = 0; // Set Classic Queue}
-        //
-        else{
-        ig_tm_md.qid = 0; // Set Classic Queue}
-        }  
-        // Note: Default Queue ID is 0 for other packets that we let it go on!
+        // Other and Not-Classified take no admission action: ECN and DSCP remain unchanged.
 
         // c7_ingress_logic: count by decision/arrival ECN and by queue/class.
         if (ig_tm_md.ucast_egress_port == 137 && !hdr.nodeCount.isValid()) {
@@ -1373,6 +1361,7 @@ control Ingress(
         hdr.bridge.bridge_ingress_port = (bit<16>)ig_intr_md.ingress_port;
         hdr.bridge.ingress_global_tstamp = ig_intr_prsr_md.global_tstamp;
         hdr.bridge.bridge_qid = (bit<16>)ig_tm_md.qid; 
+        hdr.bridge.trusted_admission = trusted_admission;
     }
     
     }    
@@ -1568,6 +1557,7 @@ control Egress(
         bit<32> c7_mask;
         bit<32> c7_masked;
         bit<32> c7_slot;
+        bit<8> trusted_admission;
         Counter<bit<64>, bit<8>>(64, CounterType_t.PACKETS_AND_BYTES) c7_egress_event;
         Register<bit<32>, bit<1>>(1) c7_seq_reg;
         Register<bit<32>, bit<1>>(1) c7_slot_reg;
@@ -2236,6 +2226,7 @@ control Egress(
         // coupling_queue_snapshot: save logical queue before bridge invalidation.
         // (1) Remember the queue (0/1) and save the queue-delay sample read by the AQM controller.
         coupling_queue = hdr.bridge.bridge_qid;
+        trusted_admission = hdr.bridge.trusted_admission;
         c7_eval = 0;
         c7_event = 0;
         // coupling_sampling_logic: sample ordinary IPv4 traffic before dropping
@@ -2669,7 +2660,7 @@ control Egress(
             // }
             
             // *** table for thresholds Decision Mirror Triggered ***//
-            if (hdr.ipv4.isValid()) {
+            if (hdr.ipv4.isValid() && trusted_admission == 0) {
                 c7_pkt_idx = c7_pkt_inc.execute(eg_md.metadata_flowID);
                 if (hdr.rtp.isValid() && hdr.rtp.version == RTP_VERSION && hdr.rtp.marker == 1) {
                     c7_frm_idx = c7_frm_inc.execute(eg_md.metadata_flowID);
