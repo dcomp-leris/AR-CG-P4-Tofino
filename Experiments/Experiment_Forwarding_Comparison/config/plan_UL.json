@@ -1,0 +1,40 @@
+{
+  "direction": "UL",
+  "gap_s": 45.0,
+  "sessions": [
+    {
+      "session": "CGUL_3000",
+      "trace": "UL-CG (ul/mycgull_p00.pcap)",
+      "src_ip": "172.16.0.4",
+      "dst_ip": "172.16.0.5",
+      "src_port": "39501",
+      "dst_port": "3000",
+      "packets": 68014,
+      "bytes_l2": 10070042,
+      "duration_s": 511.571551,
+      "mean_rate_mbps": 0.157,
+      "peak_1ms_mbps": 4.16,
+      "peak_100ms_mbps": 0.284,
+      "max_peak_fraction_of_10G": 0.00042,
+      "sampling_mask": 1,
+      "expected_samples": 34007
+    },
+    {
+      "session": "CGUL_3005",
+      "trace": "UL-CG (ul/mycgull_p00.pcap)",
+      "src_ip": "172.16.0.4",
+      "dst_ip": "172.16.0.5",
+      "src_port": "47832",
+      "dst_port": "3005",
+      "packets": 20472,
+      "bytes_l2": 3022480,
+      "duration_s": 299.735108,
+      "mean_rate_mbps": 0.081,
+      "peak_1ms_mbps": 3.568,
+      "peak_100ms_mbps": 0.251,
+      "max_peak_fraction_of_10G": 0.00036,
+      "sampling_mask": 0,
+      "expected_samples": 20472
+    }
+  ]
+}

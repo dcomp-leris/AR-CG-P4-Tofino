@@ -1,0 +1,3682 @@
+[
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R10_rep5",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R10_rep1",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R10_rep3",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R50_rep2",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R50_rep5",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R50_rep4",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R50_rep2",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R50_rep3",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R10_rep2",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R10_rep4",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R10_rep2",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R50_rep4",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R10_rep3",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R50_rep4",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R10_rep5",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R50_rep3",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R50_rep2",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R10_rep5",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R10_rep1",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R50_rep1",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R50_rep2",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R50_rep2",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R50_rep1",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R10_rep3",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R10_rep4",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R10_rep1",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R10_rep3",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R50_rep3",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R50_rep2",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R10_rep2",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R50_rep3",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R50_rep2",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R10_rep5",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R50_rep5",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R10_rep5",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R50_rep3",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R50_rep5",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R50_rep5",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R10_rep4",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R10_rep3",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R10_rep5",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R10_rep2",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R10_rep2",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R50_rep5",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R50_rep4",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R10_rep1",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R10_rep5",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R10_rep4",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R10_rep2",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R10_rep4",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R10_rep4",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R10_rep4",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R50_rep3",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R50_rep4",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R10_rep3",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R50_rep1",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R50_rep5",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R50_rep3",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R50_rep4",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R10_rep1",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R50_rep5",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R10_rep3",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R50_rep1",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R50_rep2",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R10_rep1",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N1_R50_rep4",
+  "cell": "E12",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R50_rep4",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R10_rep1",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R50_rep1",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N4_R10_rep2",
+  "cell": "E12",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R10_rep5",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R50_rep1",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N4_R50_rep3",
+  "cell": "E11",
+  "config": "b",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N4_R50_rep1",
+  "cell": "E11",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-NotECT"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_a_N1_R50_rep5",
+  "cell": "E11",
+  "config": "a",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 5,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R10_rep1",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R50_rep1",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 50,
+  "rep": 1,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E11_b_N1_R10_rep4",
+  "cell": "E11",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 4,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@mario-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-NotECT"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_b_N1_R10_rep2",
+  "cell": "E12",
+  "config": "b",
+  "n": 1,
+  "rtt_ms": 10,
+  "rep": 2,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   }
+  ]
+ },
+ {
+  "duration_s": 60,
+  "warmup_s": 10,
+  "idle_s": 10,
+  "bottleneck_kbps": 1000000,
+  "step_us": 1000,
+  "ring_mask_bits": 7,
+  "run_id": "E12_a_N4_R10_rep3",
+  "cell": "E12",
+  "config": "a",
+  "n": 4,
+  "rtt_ms": 10,
+  "rep": 3,
+  "flows": [
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5201,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5202,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5203,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "prague",
+    "port": 5204,
+    "group": "L4S"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5211,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5212,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5213,
+    "group": "Classic-ECT0"
+   },
+   {
+    "host": "user@peach-host",
+    "cc": "cubic",
+    "port": 5214,
+    "group": "Classic-ECT0"
+   }
+  ]
+ }
+]

@@ -1,0 +1,9 @@
+group,impl,repetitions,sessions_per_rep,evaluated_pkts_total,mean_residence_ns,per_rep_mean_residence_ns,sd_across_reps_ns,median_residence_ns,p95_residence_ns,mean_queue_delay_raw,p95_queue_delay_raw,sent,received,loss,all_sums_unwrap_ok,all_samples_complete,decision_entries,decision_incomplete,decision_latency_median_ns,decision_latency_p95_ns,decision_latency_max_ns,budget_packets_frames_per_entry,clones_emitted_total,clones_received_total,rf_executions_total,clones_after_decision_total,clones_emitted_per_entry_min_max,incremental_residence_ns,incremental_per_rep_ns,incremental_sd_across_reps_ns
+DL-AR,ICEFE,3,4,128499,909.0,909.55;908.15;909.29,0.75,975,989,101.8,103,128499,128499,0,True,True,12,0,1755,1794,1794,52/13,624,624,624,612,52-52,10.57,11.59;8.96;11.16,1.41
+DL-AR,FWD,3,4,128499,898.43,897.96;899.19;898.13,0.66,977,991,101.8,103,128499,128499,0,True,True,,,,,,,,,,,,,,
+DL-CG,ICEFE,3,6,2602380,777.79,777.99;777.32;778.06,0.41,790,833,101.8,103,2602380,2602380,0,True,True,18,0,1594,1636,1636,52/13,936,936,936,918,52-52,8.57,9.03;7.58;9.10,0.86
+DL-CG,FWD,3,6,2602380,769.22,768.96;769.74;768.96,0.45,791,835,101.8,103,2602380,2503845,98535,True,True,,,,,,,,,,,,,,
+DL-combined,ICEFE,3,10,2730879,783.96,784.18;783.48;784.24,0.42,790,839,101.8,103,2730879,2730879,0,True,True,30,0,1597,1792,1794,52/13,1560,1560,1560,1530,52-52,8.66,9.15;7.65;9.20,0.88
+DL-combined,FWD,3,10,2730879,775.3,775.03;775.83;775.04,0.46,792,841,101.8,103,2730879,2632344,98535,True,True,,,,,,,,,,,,,,
+UL-CG,ICEFE,3,2,265458,505.14,505.13;505.13;505.14,0.0,504,511,101.81,103,265458,265458,0,True,True,6,0,1307,1309,1309,32/8,159,159,159,153,26-27,118.74,118.74;118.74;118.75,0.0
+UL-CG,FWD,3,2,265458,386.39,386.39;386.39;386.39,0.0,386,392,101.79,103,265458,265458,0,True,True,,,,,,,,,,,,,,

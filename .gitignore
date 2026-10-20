@@ -1,0 +1,19 @@
+# Generated Tofino files
+/ICEFE/
+/ICEFE.compile.log
+/ICEFE.switchd.conf
+/Experiments/Experiment_Forwarding_Comparison/programs/ICEFE_r2c1/
+/Experiments/Experiment_Forwarding_Comparison/programs/FWD_r2c1/
+/Experiments/Experiment_Forwarding_Comparison/programs/*.switchd.conf
+
+# Captures and run artifacts
+*.pcap
+*.pcapng
+*.log
+**/raw/
+**/__pycache__/
+*.pyc
+
+# Local tools
+.ipynb_checkpoints/
+.DS_Store

@@ -1,0 +1,169 @@
+{
+  "train_flows": 5317,
+  "test_flows": 2580,
+  "train_class_flows": {
+    "AR": 119,
+    "CG": 168,
+    "Other": 5030
+  },
+  "test_class_flows": {
+    "AR": 44,
+    "CG": 72,
+    "Other": 2464
+  },
+  "train": {
+    "flows": {
+      "confusion": {
+        "AR": {
+          "AR": 73.0,
+          "CG": 5.0,
+          "Other": 41.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 1.0,
+          "CG": 164.0,
+          "Other": 3.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 42.0,
+          "CG": 22.0,
+          "Other": 4966.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.9785593379725409,
+      "FP_other_to_ARCG": 0.012723658051689861,
+      "FN_ARCG_not_admitted": 0.15331010452961671
+    },
+    "packets": {
+      "confusion": {
+        "AR": {
+          "AR": 902485.0,
+          "CG": 67521.0,
+          "Other": 412155.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 7124.0,
+          "CG": 505845.0,
+          "Other": 12618.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 70.0,
+          "CG": 70.0,
+          "Other": 446584.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.7878258904756565,
+      "FP_other_to_ARCG": 0.00031339260930686506,
+      "FN_ARCG_not_admitted": 0.22265676598796066
+    },
+    "bytes": {
+      "confusion": {
+        "AR": {
+          "AR": 1175143862.0,
+          "CG": 88094611.0,
+          "Other": 536922943.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 8136938.0,
+          "CG": 522612452.0,
+          "Other": 13497894.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 6624.0,
+          "CG": 5584.0,
+          "Other": 457229346.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.7691843965617273,
+      "FP_other_to_ARCG": 2.669923565170982e-05,
+      "FN_ARCG_not_admitted": 0.23478023989588503
+    }
+  },
+  "test": {
+    "flows": {
+      "confusion": {
+        "AR": {
+          "AR": 28.0,
+          "CG": 3.0,
+          "Other": 13.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 1.0,
+          "CG": 71.0,
+          "Other": 0.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 32.0,
+          "CG": 30.0,
+          "Other": 2402.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.9693798449612403,
+      "FP_other_to_ARCG": 0.025162337662337664,
+      "FN_ARCG_not_admitted": 0.11206896551724138
+    },
+    "packets": {
+      "confusion": {
+        "AR": {
+          "AR": 346584.0,
+          "CG": 29733.0,
+          "Other": 125877.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 7191.0,
+          "CG": 208189.0,
+          "Other": 0.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 52.0,
+          "CG": 126.0,
+          "Other": 162636.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.814878212787998,
+      "FP_other_to_ARCG": 0.0010932720773397864,
+      "FN_ARCG_not_admitted": 0.1754202354042928
+    },
+    "bytes": {
+      "confusion": {
+        "AR": {
+          "AR": 451446928.0,
+          "CG": 38675547.0,
+          "Other": 164026641.0,
+          "none": 0.0
+        },
+        "CG": {
+          "AR": 7948922.0,
+          "CG": 212796643.0,
+          "Other": 0.0,
+          "none": 0.0
+        },
+        "Other": {
+          "AR": 4532.0,
+          "CG": 9828.0,
+          "Other": 167968628.0,
+          "none": 0.0
+        }
+      },
+      "accuracy": 0.7979959910331534,
+      "FP_other_to_ARCG": 8.548484683460923e-05,
+      "FN_ARCG_not_admitted": 0.1874815844262745
+    }
+  },
+  "seed": 3
+}
